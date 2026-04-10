@@ -25,7 +25,7 @@ A library of magical scripts and snippets ready for use on your site.
 1. Ensure **Xophz COMPASS** is installed and active.
 2. Upload `xophz-compass-enchiridion` to `/wp-content/plugins/`.
 3. Activate through the Plugins menu.
-4. Access via the COMPASS dashboard → **Enchiridion**.
+4. Access via the My Compass dashboard → **Enchiridion**.
 
 ## PHP Class Map
 
