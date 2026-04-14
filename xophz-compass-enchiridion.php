@@ -17,13 +17,14 @@
  * Plugin Name:       Xophz Enchiridion Library
  * Plugin URI:        http://www.mycompassconsulting.com/
  * Description:       Add this library of magical scripts and snippets to be ready for use on your site.
- * Version:           26.4.13.483
+ * Version:           26.4.14.1311
  * Author:            Hall of the Gods, Inc.
  * Author URI:        http://www.midnightnerd.com/
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       xophz-compass-enchiridion
  * Domain Path:       /languages
+ * Update URI:        https://github.com/HalloftheGods/xophz-compass-enchiridion
  */
 
 
@@ -37,7 +38,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'XOPHZ_COMPASS_ENCHIRIDION_VERSION', '26.4.13.483' );
+define( 'XOPHZ_COMPASS_ENCHIRIDION_VERSION', '26.4.14.1311' );
 
 /**
  * The code that runs during plugin activation.
