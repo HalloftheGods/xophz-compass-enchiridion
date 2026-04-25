@@ -15,7 +15,7 @@
  * @wordpress-plugin
  * Category:          Wizard's Tower
  * Plugin Name:       Xophz Enchiridion Library
- * Plugin URI:        http://www.mycompassconsulting.com/
+ * Plugin URI:        https://github.com/HalloftheGods/xophz-compass-enchiridion
  * Description:       Add this library of magical scripts and snippets to be ready for use on your site.
  * Version:           26.4.24
  * Author:            Hall of the Gods, Inc.
