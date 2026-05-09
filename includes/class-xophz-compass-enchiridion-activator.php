@@ -174,6 +174,16 @@ class Xophz_Compass_Enchiridion_Activator {
         'icon'        => 'pen-fancy',
         'enabled'     => false,
       ),
+      array(
+        'title'       => 'Hide Admin Bar',
+        'description' => 'Removes the WordPress admin bar for all users.',
+        'category'    => 'Customization',
+        'hook'        => 'init',
+        'context'     => 'both',
+        'code'        => "add_filter('show_admin_bar', '__return_false');",
+        'icon'        => 'eye-slash',
+        'enabled'     => false,
+      ),
     );
   }
 }

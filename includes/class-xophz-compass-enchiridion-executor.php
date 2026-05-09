@@ -140,14 +140,22 @@ class Xophz_Compass_Enchiridion_Executor {
    */
   private function run_code( $code, $recipe_id ) {
     try {
-      // The code is stored as a callable function name or inline code
-      // For security, we use predefined functions rather than eval()
+      // The code is stored as a callable function name or inline PHP code
       if ( is_callable( $code ) ) {
         call_user_func( $code );
+      } else {
+        // Evaluate raw PHP string
+        eval( $code );
       }
     } catch ( Exception $e ) {
       error_log( sprintf( 
         '[Enchiridion] Recipe #%d failed: %s', 
+        $recipe_id, 
+        $e->getMessage() 
+      ) );
+    } catch ( Throwable $e ) {
+      error_log( sprintf( 
+        '[Enchiridion] Recipe #%d failed (Parse/Fatal): %s', 
         $recipe_id, 
         $e->getMessage() 
       ) );
