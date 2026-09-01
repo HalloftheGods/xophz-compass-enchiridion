@@ -6,7 +6,7 @@ A library of magical scripts and snippets ready for use on your site.
 
 ## Description
 
-**Enchiridion Library** is a code snippet manager for COMPASS. It provides a safe, organized way to add custom PHP, JS, and CSS snippets to your site without editing theme files — including a curated recipe library of pre-built solutions.
+**Enchiridion Library** is a code snippet manager for COMPASS. It provides a safe, organized way to add custom PHP, JS, and CSS snippets to your site without editing theme files - including a curated recipe library of pre-built solutions.
 
 ### Core Capabilities
 
