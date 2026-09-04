@@ -55,8 +55,7 @@ function activate_xophz_compass_enchiridion() {
  * This action is documented in includes/class-xophz-compass-enchiridion-deactivator.php
  */
 function deactivate_xophz_compass_enchiridion() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-xophz-compass-enchiridion-deactivator.php';
-	Xophz_Compass_Enchiridion_Deactivator::deactivate();
+	Xophz_Compass_Enchiridion::deactivate();
 }
 
 register_activation_hook( __FILE__, 'activate_xophz_compass_enchiridion' );
