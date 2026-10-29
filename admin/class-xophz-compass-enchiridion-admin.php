@@ -156,6 +156,18 @@ class Xophz_Compass_Enchiridion_Admin {
    * Save custom CSS and JS.
    */
   public function save_custom_code() {
+    Xophz_Compass_Security::enforce_spa_ajax( 'manage_options' );
+
+    // Custom CSS and JS are printed unescaped into pages, so require the same
+    // capability WordPress core requires for its own custom CSS (edit_css).
+    if ( ! current_user_can( 'unfiltered_html' ) ) {
+      Xophz_Compass::output_json( array(
+        'success' => false,
+        'message' => 'Saving custom code requires the unfiltered_html capability',
+      ) );
+      return;
+    }
+
     $input = Xophz_Compass::get_input_json();
     if ( null === $input || ! is_object( $input ) ) {
       $input = (object) $_POST;
